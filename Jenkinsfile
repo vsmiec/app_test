@@ -5,17 +5,17 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                cargo build 
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
+                cargo run
+                
+
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+       
     }
 }
