@@ -5,14 +5,15 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                cargo build 
+                ~/.cargo/bin/cargo build 
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                cargo run
-                
+                ~/.cargo/bin/cargo run
+                python script.py
+
 
             }
         }
