@@ -6,14 +6,14 @@ pipeline {
             steps {
                 echo 'Building..'
                 echo pwd
-                ~/.cargo/bin/cargo build 
+                // ~/.cargo/bin/cargo build 
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                ~/.cargo/bin/cargo run
-                python script.py
+                // ~/.cargo/bin/cargo run
+                python script.py --secrets "dupa"
 
 
             }
