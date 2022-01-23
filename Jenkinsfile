@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                echo pwd
                 ~/.cargo/bin/cargo build 
             }
         }
