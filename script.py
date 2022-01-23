@@ -1,9 +1,12 @@
 import argparse
 
+
+parser = argparse.ArgumentParser()
+
 if __name__ == "__main__":
     # display help and version
     parser.add_argument(
-        "--secrets". required=True
+        "--secrets", required=True
     )
     
     # parsing arguments from user
