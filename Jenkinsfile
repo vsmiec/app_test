@@ -11,7 +11,7 @@ pipeline {
                 echo 'Building..'
                 echo pwd
                 sh 'ls'
-                echo $BIG_SECRET
+                // echo $BIG_SECRET
                 // ~/.cargo/bin/cargo build 
             }
         }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 // ~/.cargo/bin/cargo run
-                sh 'python script.py --secrets $BIG_SECRET'
+                sh('python script.py --secrets $BIG_SECRET')
 
 
             }
