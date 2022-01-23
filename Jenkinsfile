@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 echo pwd
-                ls
+                sh 'ls'
                 // ~/.cargo/bin/cargo build 
             }
         }
