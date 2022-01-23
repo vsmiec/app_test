@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 echo pwd
+                ls
                 // ~/.cargo/bin/cargo build 
             }
         }
@@ -13,7 +14,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 // ~/.cargo/bin/cargo run
-                bash 'python script.py --secrets "dupa"'
+                sh 'python script.py --secrets "dupa"'
 
 
             }
