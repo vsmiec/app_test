@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 // ~/.cargo/bin/cargo run
-                python script.py --secrets "dupa"
+                bash 'python script.py --secrets "dupa"'
 
 
             }
