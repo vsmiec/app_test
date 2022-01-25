@@ -6,9 +6,7 @@ pipeline {
     }
 
     stages {
-        when {
-             branch 'master'
-        }
+        
         stage('Build') {
             steps {
                 echo 'Building..'
